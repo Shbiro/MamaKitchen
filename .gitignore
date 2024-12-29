@@ -6,3 +6,5 @@ frontend/
 
 # Ignore environment files (אם יש לך)
 .env
+
+.amir.pem
