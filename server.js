@@ -12,6 +12,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'));
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+// עדכון הכתובת ל-0.0.0.0
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server is running on http://0.0.0.0:${port}`);
 });
