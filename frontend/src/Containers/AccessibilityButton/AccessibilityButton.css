@@ -1,0 +1,114 @@
+/* כל התוכן באתר יושפע */
+body.normal {
+    font-size: 1rem;
+  }
+  
+  body.large {
+    font-size: 1.5rem;
+  }
+  
+  body.high-contrast {
+    background-color: #000;
+    color: #fff;
+  }
+  
+
+.accessibility-container {
+    position: fixed;
+    bottom: 20px; /* המרחק מלמטה */
+    left: 20px;  /* המרחק מצד שמאל */
+    z-index: 1000; /* מבטיח שהכפתור יהיה מעל לשאר התוכן */
+  }
+  
+  .accessibility-button {
+    padding: 0;
+    background-color: transparent; /* רקע שקוף */
+    border: none; /* ללא גבול לכפתור */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* צל */
+  }
+  
+  .image {
+    width: 40px; /* הקטנת גודל התמונה */
+    height: 40px; /* הקטנת גובה התמונה */
+    border-radius: 50%; /* עיגול התמונה */
+  }
+  
+  .accessibility-options {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל */
+    position: absolute;
+    bottom: 60px; /* רווח בין התפריט לכפתור */
+    left: 0; /* מיקום התפריט בצד שמאל */
+    width: 250px; /* רוחב התפריט */
+  }
+  
+  .accessibility-options h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .accessibility-options ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .accessibility-options ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .accessibility-options ul li:hover {
+    color: #007bff; /* שינוי צבע בעת ריחוף */
+  }
+  
+  /* סטיילים עבור שינוי גודל הפונט */
+  .normal {
+    font-size: 1rem;
+  }
+  
+  .large {
+    font-size: 1.5rem;
+  }
+  
+  /* סטיילים עבור ניגודיות גבוהה */
+  .high-contrast {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  
+  /* @media עבור מסכים קטנים */
+  @media (max-width: 768px) {
+    .accessibility-container {
+      left: 10px; /* מרחק קטן יותר מצד שמאל */
+      bottom: 200px; /* רווח קטן יותר מלמטה */
+    }
+  
+    .image {
+      width: 55px; /* הקטנת גודל התמונה במובייל */
+      height: 55px; /* הקטנת גובה התמונה במובייל */
+    }
+  
+    .accessibility-options {
+      width: 200px; /* רוחב התפריט קטן יותר במובייל */
+      bottom: 50px; /* רווח קטן יותר מהכפתור */
+    }
+  
+    .accessibility-options h3 {
+      font-size: 1rem; /* הקטנת גודל הכותרת במובייל */
+    }
+  
+    .accessibility-options ul li {
+      font-size: 0.9rem; /* הקטנת גודל הטקסט במובייל */
+    }
+  }
+  

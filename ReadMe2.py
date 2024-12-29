@@ -14,7 +14,5 @@
 
 # git commit -m "כך בוצע העדכון וכו'"
 
-# זה אם אני צריך remote
-
 # העלה ראשונה
 #git push -u origin main

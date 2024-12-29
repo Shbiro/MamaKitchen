@@ -1,0 +1,35 @@
+.social-media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px; /* רווח בין התוכן של "עלינו" לרשתות החברתיות */
+  }
+  
+  .social-media-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media-icons a {
+    margin: 0 15px; /* רווח בין האייקונים */
+  }
+  
+  .social-icon {
+    width: 40px; /* רוחב קבוע לאייקונים */
+    height: 40px; /* גובה קבוע לאייקונים */
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* אפקט ריחוף שיגדל את האייקון */
+  }
+  

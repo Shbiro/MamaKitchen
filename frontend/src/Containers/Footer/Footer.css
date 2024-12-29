@@ -1,0 +1,101 @@
+/* טעינת הפונט */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+/* עיצוב הפוטר */
+.footer {
+  background-color: #333; /* רקע כהה */
+  color: white; /* צבע טקסט לבן */
+  padding: 20px;
+  text-align: center; /* יישור הטקסט במרכז */
+  font-family: Arial, sans-serif;
+  direction: ltr; /* כיוון מימין לשמאל */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* צל רך לכל הפוטר */
+  border-radius: 10px; /* פינות מעוגלות */
+  margin-top: 30px; /* רווח מעל הפוטר */
+}
+
+/* הגדרת הפונט עבור h3 */
+.footer h3 {
+  font-family: 'Rubik Dirt', sans-serif; /* החלת הפונט Rubik Dirt */
+  font-size: 30px; /* גודל פונט ענק */
+  font-weight: 100; /* מודגש */
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* פיזור שווה של התוכן */
+  align-items: flex-start;
+  padding: 10px 0;
+  flex-wrap: wrap; /* לא לעיוות אם יש יותר מדי פריטים */
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  text-align: center; /* יישור המרכז לכל החלקים */
+  margin: 10px;
+}
+
+.footer-left h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.footer-center h4,
+.footer-right h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 5px 0;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline; /* קו תחתון בעת ריחוף */
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #bbb; /* צבע טקסט בהיר */
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center; /* שימור יישור במרכז במסכים קטנים */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: none;
+    margin-bottom: 20px;
+    text-align: center; /* יישור כל החלקים במרכז */
+  }
+
+  .footer h3 {
+    font-family: 'Rubik Dirt', sans-serif; /* החלת הפונט Rubik Dirt */
+    font-size: 30px; /* גודל פונט ענק */
+    font-weight: 100; /* מודגש */
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}

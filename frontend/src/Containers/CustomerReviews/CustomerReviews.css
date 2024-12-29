@@ -1,0 +1,80 @@
+.reviews-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .reviews-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .reviews-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 10px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+  
+    /* הסתרת פס הגלילה */
+    scrollbar-width: none; /* עבור דפדפנים מבוססי פיירפוקס */
+  }
+  
+  .reviews-slider::-webkit-scrollbar {
+    display: none; /* עבור דפדפנים מבוססי Webkit (כרום, ספארי וכו') */
+  }
+  
+  
+  .review-card {
+    flex: 0 0 300px; /* קובע רוחב אחיד לכרטיס */
+    height: auto; /* גובה מותאם לתוכן */
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* אפקט צל */
+    overflow: hidden; /* מוודא שהתוכן יישאר בתוך הכרטיס */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word; /* שובר מילים ארוכות */
+    white-space: normal; /* מאפשר לטקסט לשבור שורות */
+  }
+  
+  .review-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    max-height: 150px; /* מגביל את גובה הטקסט */
+    overflow: hidden; /* מסתיר טקסט נוסף */
+    text-overflow: ellipsis; /* מציין שקטע נוסף קיים עם "..." */
+  }
+  
+  .review-author {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  
+  /* התאמה למובייל */
+  @media (max-width: 768px) {
+    .reviews-container {
+      padding: 10px;
+    }
+  
+    .review-card {
+      min-width: 250px;
+      max-width: 250px;
+    }
+  
+    .reviews-title {
+      font-size: 1.5rem;
+    }
+  }
+  

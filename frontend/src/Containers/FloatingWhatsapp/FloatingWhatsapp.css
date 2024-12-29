@@ -1,0 +1,23 @@
+.floating-whatsapp-container {
+    position: fixed;
+    bottom: 20px; /* המרחק מלמטה של המסך */
+    right: 20px; /* המרחק מצד ימין של המסך */
+    z-index: 1000; /* מבטיח שהכפתור יימצא מעל לשאר התוכן */
+  }
+  
+  .floating-whatsapp-button {
+    background-color: #25d366; /* צבע רקע של כפתור וואטסאפ */
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* צל */
+  }
+  
+  .floating-whatsapp-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  

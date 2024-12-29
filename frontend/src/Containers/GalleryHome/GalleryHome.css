@@ -1,0 +1,74 @@
+.gallery-container {
+    width: 50%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* מרכז את הגלריה באופן אופקי */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* מרכז את התוכן אנכית */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* אפקט הצללה */
+    border-radius: 10px; /* פינות מעוגלות */
+    background-color: #7e490e; /* רקע בהיר לגלריה */
+}
+
+
+.gallery-slider {
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.gallery-slide.active {
+    opacity: 1;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* שכבת צבע כהה */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-slide.active .gallery-overlay {
+    opacity: 1; /* הצגת השכבה */
+}
+
+.gallery-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        height: 60vh; /* גובה מותאם למסכים קטנים */
+        width: 100%;
+    }
+}
